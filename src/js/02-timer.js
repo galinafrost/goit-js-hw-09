@@ -19,7 +19,7 @@ const options = {
     console.log(selectedDates[0]);
 
     if (Number(selectedDates[0]) < Number(now)) {
-      Notiflix.Notify.success(`Please choose a date in the future`);
+      Notiflix.Notify.warning(`Please choose a date in the future`);
       buttonStartEl.setAttribute('disabled', 'disabled');
     } else {
       buttonStartEl.removeAttribute('disabled');
